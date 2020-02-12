@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#1a237e">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:text="@string/restore_backup"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_safe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:text="@string/restore_confirmation"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="@string/restore_button"
+            android:textAllCaps="false"
+            android:id="@+id/btRestore"
+            android:textColor="#1a237e"
+            android:elevation="2dp"
+            android:translationZ="6dp"
+            android:background="@drawable/bt_start"
+            android:stateListAnimator="@anim/raised_button_anim"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="@string/skip"
+            android:textAllCaps="false"
+            android:id="@+id/btSkipRestore"
+            android:textColor="#1a237e"
+            android:elevation="2dp"
+            android:translationZ="6dp"
+            android:background="@drawable/bt_start"
+            android:stateListAnimator="@anim/raised_button_anim"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/loRestore"
+        android:visibility="gone"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Backup restored successfully"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/thumb"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:text="@string/restore_note"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+</LinearLayout>

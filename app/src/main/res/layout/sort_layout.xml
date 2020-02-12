@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center_horizontal" android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rgSort">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSortNewest"
+            android:padding="8dp"
+            android:text="@string/sort_newest"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSortOldest"
+            android:padding="8dp"
+            android:text="@string/sort_oldest"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSortType"
+            android:padding="8dp"
+            android:text="@string/sort_type"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSortTitleAZ"
+            android:padding="8dp"
+            android:text="@string/sort_title_az"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSortTitleZA"
+            android:padding="8dp"
+            android:text="@string/sort_title_za"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

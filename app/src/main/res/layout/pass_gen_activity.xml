@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/clPassGen">
+
+    <include layout="@layout/pass_gen_activity_background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@color/lightGray">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/passLength"
+                            android:textColor="@color/darkGray"
+                            android:id="@+id/tvPassLength"/>
+
+                        <android.support.v7.widget.AppCompatSeekBar
+                            style="@style/Widget.AppCompat.SeekBar.Discrete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:max="16"
+                            android:progress="0"
+                            android:id="@+id/sbPassLength" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/passInclude"
+                            android:textColor="@color/darkGray"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/caps"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:checked="true"
+                            android:id="@+id/chbCaps"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/small"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:checked="true"
+                            android:id="@+id/chbSmall"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/numbers"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:checked="true"
+                            android:id="@+id/chbNumbers"/>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/syms"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:checked="true"
+                            android:id="@+id/chbSymbols"/>
+
+                    </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/white"
+                android:id="@+id/cvResult">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Password"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:id="@+id/tvPassGenResult"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:id="@+id/ibCopy"
+                        android:src="@drawable/ic_copy"
+                        android:tint="@color/colorPrimaryDark"
+                        android:background="@color/transparent"
+                        android:foreground="?android:attr/selectableItemBackground"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/ic_key_large"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:id="@+id/tbPassGen"
+        app:elevation="4dp"
+        app:title="@string/action_pass_gen"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:theme="@style/ToolBarStyle"/>
+
+    <android.support.design.widget.FloatingActionButton
+        app:fabSize="normal"
+        app:elevation="6dp"
+        app:pressedTranslationZ="14dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_key"
+        android:tint="@color/colorPrimaryDark"
+        android:id="@+id/fabAgain"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.design.widget.CoordinatorLayout>

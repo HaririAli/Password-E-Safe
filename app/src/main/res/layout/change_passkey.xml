@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:id="@+id/tvOldPass"
+        android:layout_margin="10dp"
+        android:text="@string/old_key"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:password="true"
+        android:layout_margin="10dp"
+        android:id="@+id/etOldPasskey"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:gravity="left"
+            android:text="@string/new_key"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:gravity="right"
+            android:textSize="18dp"
+            android:text=""
+            android:id="@+id/tvMatch"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:password="true"
+        android:layout_margin="10dp"
+        android:id="@+id/etnewPasskey"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:gravity="left"
+        android:layout_margin="10dp"
+        android:text="@string/confirm_passkey"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:password="true"
+        android:layout_margin="10dp"
+        android:id="@+id/etConfirm"/>
+
+
+</LinearLayout>
+</ScrollView>

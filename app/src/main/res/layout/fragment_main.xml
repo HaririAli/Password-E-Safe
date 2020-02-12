@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:id="@+id/tbFragmentMain"
+        android:theme="@style/ToolBarStyle"
+        app:elevation="4dp"
+        app:title="@string/app_name"
+        app:navigationIcon="@drawable/ic_menu"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rvPasswords"
+            android:background="@color/lightGray"/>
+
+        <android.support.design.widget.FloatingActionButton
+            app:fabSize="normal"
+            app:elevation="6dp"
+            app:pressedTranslationZ="14dp"
+            app:backgroundTint="@color/colorAccent"
+
+            android:tint="@color/colorPrimary"
+            android:id="@+id/fabAdd"
+            android:src="@drawable/ic_add"
+            android:elevation="6dp"
+            android:layout_margin="16dp"
+            android:layout_gravity="end|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

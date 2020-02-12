@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/llPasskey">
+
+            <!--ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:fitsSystemWindows="true"
+                android:layout_margin="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close"
+                android:id="@+id/ibClose"/-->
+
+            <ImageView
+                android:fitsSystemWindows="true"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/ic_safe"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorAccent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/app_name"
+                android:id="@+id/textView" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:background="@drawable/passkey_edit_text_selector"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionGo"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/white"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="40dp"
+                    android:hint="@string/enter_passkey"
+                    android:id="@+id/etPass"/>
+
+                <ImageButton
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:src="@drawable/ic_eye"
+                    android:background="@color/transparent"
+                    android:id="@+id/ibShowPasskey"/>
+
+            </FrameLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:fabSize="normal"
+                app:elevation="6dp"
+                app:pressedTranslationZ="14dp"
+                app:backgroundTint="@color/colorAccent"
+                android:id="@+id/fab_submit_pass"
+                android:src="@drawable/fab_unlock"
+                android:elevation="6dp"
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbPasskeyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:title=" "
+
+        app:title=" "
+        app:navigationIcon="@drawable/ic_close"/>
+
+</android.support.design.widget.CoordinatorLayout>

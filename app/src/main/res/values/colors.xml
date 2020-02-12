@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#FFD180</color>
+    <color name="colorPrimaryLight">#3F51B5</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+
+    <color name="grayDivider">#bababa</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightGray">#EEEEEE</color>
+    <color name="darkGray">#757575</color>
+    <color name="transparent">#00FFffff</color>
+
+    <color name="snapchat">#fffc00</color>
+    <color name="snapchatPrimary">#ffe000</color>
+    <color name="snapchatPrimaryDark">#C2AA00</color>
+
+    <color name="twitterDark">#0080B0</color>
+    <color name="twitter">#00aced</color>
+
+    <color name="facebookDark">#2A3F6B</color>
+    <color name="facebook">#3b5997</color>
+
+    <color name="linkedin">#005a87</color>
+    <color name="linkedinDark">#00314A</color>
+
+    <color name="microsoft">#0072c6</color>
+    <color name="microsoftDark">#004F89</color>
+
+    <color name="googleBlue">#4285f4</color>
+    <color name="googleBlueDark">#0E61EB</color>
+    <color name="googleYellow">#fbbc05</color>
+    <color name="googleGreen">#34a853</color>
+    <color name="googleRed">#ea4335</color>
+
+    <color name="instagram1">#e57044</color>
+    <color name="instagram2">#e93f5b</color>
+    <color name="instagram3">#dc3273</color>
+    <color name="instagram4">#d13490</color>
+    <color name="instagram5">#b53bad</color>
+    <color name="instagram6">#a13db3</color>
+    <color name="instagram7">#7b42b9</color>
+    <color name="instagram8">#755ac6</color>
+    <color name="instagram9">#6c5eca</color>
+    <color name="instagram10">#5d60cf</color>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true"
+        android:drawable="@drawable/bt_start_pressed">
+        <set>
+            <objectAnimator android:propertyName="elevation"
+                android:duration="0"
+                android:valueTo="6"
+                android:valueType="floatType"/>
+        </set>
+    </item>
+    <!-- base state -->
+    <item android:state_enabled="true" android:drawable="@drawable/bt_start_default">
+        <set>
+            <objectAnimator android:propertyName="elevation"
+                android:duration="0"
+                android:valueTo="0"
+                android:valueType="floatType" />
+        </set>
+    </item>
+    ...
+</selector>

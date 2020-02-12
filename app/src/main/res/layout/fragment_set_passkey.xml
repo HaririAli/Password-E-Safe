@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:text="@string/title_activity_passkey"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"/>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_safe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_gravity="center"
+        android:text="@string/urgent_passkey"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/passkey_edit_text_selector"
+        android:drawablePadding="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:hint="@string/enter_passkey"
+        android:inputType="textPassword"
+        android:textColorHint="#ffe0b2"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/etNewKey"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/passkey_edit_text_selector"
+        android:drawablePadding="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:hint="@string/confirm_passkey"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#ffe0b2"
+        android:id="@+id/etConfirmNewKey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/swShowPass"
+            android:textColor="@color/colorAccent"
+            android:text="@string/show_pass"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvKeyMatch"
+            android:textColor="@color/colorAccent"
+            android:text=""
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/loKey"
+        android:visibility="gone"
+        android:layout_margin="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="You have successfully set a passkey!"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/thumb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:elevation="2dp"
+            android:translationZ="6dp"
+            android:textAllCaps="false"
+            android:id="@+id/btSubmitNewKey"
+            android:textColor="#1a237e"
+            android:background="@drawable/bt_start"
+            android:stateListAnimator="@anim/raised_button_anim"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="@string/skip"
+            android:elevation="2dp"
+            android:translationZ="6dp"
+            android:textAllCaps="false"
+            android:id="@+id/btSkipPassKey"
+            android:textColor="#1a237e"
+            android:background="@drawable/bt_start"
+            android:stateListAnimator="@anim/raised_button_anim"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

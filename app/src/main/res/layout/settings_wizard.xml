@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark" android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:orientation="vertical"
+        android:id="@+id/llFragmentContainer"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_gravity="center|bottom"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:id="@+id/btNext"
+        android:textColor="@color/colorPrimaryDark"
+        android:elevation="2dp"
+        android:translationZ="6dp"
+        android:background="@drawable/bt_start"
+        android:stateListAnimator="@anim/raised_button_anim"/>
+
+</android.support.design.widget.CoordinatorLayout>
